@@ -11,7 +11,7 @@ import {
 
 const MyChart = ({ data }) => {
   return (
-    <LineChart width={600} height={400} data={data}>
+    <LineChart width={1000} height={400} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />

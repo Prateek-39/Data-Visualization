@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 function Form(props) {
-  const [dataArray, setDataArray] = useState([]);
-
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -15,19 +13,9 @@ function Form(props) {
       // Add more fields as needed
     };
     console.log(newData);
+    props.getData(newData);
 
-    // Call the handleDataInput function with the new data
-    handleDataInput(newData);
-
-    // Clear the form inputs
     event.target.reset();
-  };
-
-  const handleDataInput = (dataObject) => {
-    // setDataArray([...dataArray, dataObject]);
-    setDataArray((dataArray) => [...dataArray, dataObject]);
-    console.log(dataArray);
-    props.getData(dataArray);
   };
 
   return (

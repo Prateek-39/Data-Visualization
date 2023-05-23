@@ -11,7 +11,7 @@ import {
 
 const Barchart = ({ data }) => {
   return (
-    <BarChart width={600} height={400} data={data}>
+    <BarChart width={1000} height={400} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />

@@ -19,8 +19,8 @@ function App() {
 
   const getData = (datas) => {
     console.log(datas);
-    // setGraphData([...graphData, data]);
-    setGraphData((graphData) => [...graphData, datas]);
+    setGraphData([...graphData, datas]);
+    // setGraphData((graphData) => [...graphData, datas]);
   };
 
   return (
